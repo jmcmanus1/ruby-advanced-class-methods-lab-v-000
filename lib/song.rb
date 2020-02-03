@@ -46,6 +46,8 @@ class Song
     all.sort_by {|obj| obj.name}
   end
 
+   "Thundercat - For Love I Come.mp3"
+
   def self.new_from_filename(filename)
     binding.pry
   end
