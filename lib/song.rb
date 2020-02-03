@@ -1,7 +1,7 @@
 require 'pry'
 
 class Song
-  attr_accessor :name, :artist_name
+  attr_accessor :name, :artist
   @@all = []
 
   def self.new_by_name(song_name)
@@ -51,7 +51,7 @@ class Song
     artist_name = filename.split(" - ")[0]
     song = self.new
     song.name = song_name
-    song.artist = artist_name
+    song.artist_name = artist_name
     song.save
     song
     binding.pry
