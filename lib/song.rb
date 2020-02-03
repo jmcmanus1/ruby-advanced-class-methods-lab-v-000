@@ -41,4 +41,7 @@ class Song
     else find_by_name(song_name)
     end
   end
+
+  def self.alphabetical
+    all.sort_by{|item| item.attribute}
 end
