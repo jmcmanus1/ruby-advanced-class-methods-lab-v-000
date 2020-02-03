@@ -39,5 +39,6 @@ class Song
     if find_by_name(song_name) == nil
       create_by_name(song_name)
     else find_by_name(song_name)
+    end
   end
 end
