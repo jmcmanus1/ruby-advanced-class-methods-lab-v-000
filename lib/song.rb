@@ -40,7 +40,7 @@ class Song
       if song_name == song.name
         song_name
       else
-        self.create_by_name
+        self.create_by_name(song_name)
       end
     end
   end
